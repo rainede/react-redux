@@ -8,4 +8,9 @@ jobs:
       - checkout
       - run: yarn install
       - run: yarn test
-      
+deployment:
+  staging:
+    branch: master
+    owner: rainede
+    heroku:
+      appname: ci-demo-app
